@@ -1,0 +1,10 @@
+
+
+@media(max-width: 335px){
+    nav a img{
+        display: none;
+    }
+    #logo{
+        font-size: x-large;
+    }
+}

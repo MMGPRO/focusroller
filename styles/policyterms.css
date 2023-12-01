@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+  
+  }
+  nav{
+    font-family: sans-serif ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(25, 132, 255);
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+  }
+  nav a{
+    color: white;
+  }
+  #logo{
+    font-family: 'roboto', sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+    color: black;
+    margin-bottom: 5px;
+  }
+  input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  label{
+    display: none;
+  }
+  label img{
+    cursor: pointer;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  ul a{
+    padding: 0.5em;
+  }
+  
+    label{
+        display: block;
+    }
+    ul{
+        font-size: 16px;
+        position: absolute;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(94, 105, 255, 0.932);
+        gap: 1em;
+        top: 70px;
+        width: 100%;
+        height: 80vh;
+        transition: 0.5s;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    input[type="checkbox"]:checked ~ ul{
+        left: 0;
+    }
+    ul a:hover{ 
+        background: none;
+        border: none;
+        color: black;
+        border-bottom: 2px solid;
+        font-weight: bold;
+    }
+    ul p{
+      font-weight: bold;
+    }
+    .privacy{
+      margin-top: 70px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer{
+      background-color: rgb(25, 132, 255) ;
+      padding-bottom: 30px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  footer p{
+      text-align: center;
+      color: black;
+      margin: 3px;
+  }
+  footer button{
+      margin: 0 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .facebook{
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    color: blue;
+    background-color: white;
+}
+.instagram{
+    background-color: red;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.instagram:hover{
+    background-color: rgb(218, 67, 67);
+}
+.facebook:hover{
+    color: blue;
+    background-color: black;
+}
+.follow{
+    font-family:  sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.roller{
+    font-size: 12px;
+    color: rgb(39, 39, 39);
+}
+  .about{
+    margin-top: 70px;
+  }
+  @media(max-width: 335px){
+    nav a img{
+        display: none;
+    }
+    #logo{
+      font-size: x-large;
+  }
+}
+.x{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  width: 50px;
+}
+.x:hover{
+  background-color: white;
+  color: black;
+}
+.quick p{
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  
+}
+.quick a{
+  color: black;
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+}
+.quick{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: center;
+  border-bottom: 2px solid;
+}
+span a{
+  color: black;
+}
+footer span{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+.media102{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid;
+}
+@media(min-width:800px){
+  .controller{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
